@@ -225,12 +225,14 @@ padding: 4em;
 }
 
 
-@media screen and (max-width: 1024px) {
+
+
+@media screen and (min-width: 1024px) {
   .semicircle {
   position: absolute;
   width: 100vw;
   height: 80vh;
-  clip-path: circle(20% at 57.5% 30%);
+  clip-path: circle(15% at 57.5% 30%);
   background-color: #00c9ac;
   z-index: 1;
 }
@@ -248,7 +250,7 @@ padding: 4em;
   position: absolute;
   width: 100vw;
   height: 80vh;
-  clip-path: circle(20% at 60% 25%);
+  clip-path: circle(15% at 60% 25%);
   background-color: #ff406f;
   overflow: hidden;
   z-index: -2;
