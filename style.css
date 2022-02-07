@@ -21,9 +21,10 @@ a {
 .links {
   display: flex;
   gap: 1.5em;
-  width: 100%;
+  width: 30%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  float: right;
 }
 .mainpart {
   position: absolute;
@@ -331,6 +332,11 @@ padding: 0.2em;
   /* half-width cells for larger devices */
   body {
     font-size: medium;
+  }
+
+  .links{
+      justify-content: center;
+       width: 100%;
   }
   .container {
     margin: 0;
