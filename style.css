@@ -28,12 +28,6 @@ a {
   width: 100%;
 }
 
-.gallery {
-    display: flex;
-    gap: 2em;
-    backdrop-filter: blur(20px);
-}
-
 .links {
   display: flex;
   gap: 1.5em;
