@@ -94,10 +94,9 @@ a {
 
 .rightside {
   display: flex;
-  flex-direction: column;
-  flex: 1;
-  flex-wrap: wrap;
-  flex-basis: 100%;
+  position: absolute;
+  background-color: #00c9ac;
+  width: 100%;
 }
 
 
@@ -112,10 +111,12 @@ a {
   flex: 1;
   flex-wrap: wrap;
   flex-basis: 100%;
+  width: 100%;
 }
 
 .leftside > h1 {
-  font-size: 64px;
+  margin-top: 0;
+  font-size: 80px;
   margin-bottom: 0;
   width: 80%;
 }
@@ -269,14 +270,62 @@ a {
   animation: showTopText 1s;
   animation-delay: 0.3s;
   animation-fill-mode: forwards;
+  /* background-color: #00c9ac; */
 }
 
  .animated-title{
     display: none;
   }
 
+@media screen and (min-width:2560px) {
+  .rightside{
+    position: absolute;
+    left: -18%;
+  }
+
+  .image{
+    position: absolute;
+   top: 90px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+
+.image{
+  left: 73.5%;
+  top: -3em;
+}
+
+.keepbuttons{
+  /* background-color: #8880e7; */
+  max-width: 40%;
+}
+
+.rightside{
+width: 95%;
+}
+
+.image::after{
+  content: "";
+  left: -20%;
+  min-width:350px;
+  min-height:350px;
+}
+.image::before{
+  content: "";
+  left: -15%;
+  min-width:350px;
+  min-height:350px;
+}
+
+.desktop{
+  font-size: 100px;
+}
+}
 /* =========================================================== */
-@media screen and (min-width: 1024px) {
+
+
+@media only screen and (min-width: 1024px) {
   .semicircle {
     position: absolute;
     width: 100vw;
@@ -297,15 +346,20 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #f4dcb8;
-  border-radius: 100%;
+  border-radius: 50%;
   width: 20%;
-  height: 40%;
-  top: 50px;
-  right: 405px;
+  right: 3.5%;
+
+
+}
+
+.rightside{
+  top: 15%;
+  right: 20%;
 }
 
   .model {
-    width: 350px;
+   max-width: 100%; 
   }
 
   .outercircle {
@@ -321,27 +375,27 @@ a {
   .image::after {
     position: absolute;
     content: "";
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     z-index: -1;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 50%;
     z-index: -1;
-    padding: 0.3em;
+    padding: 0.2em;
     right: -55px;
   }
 
   .image::before {
     position: absolute;
     content: "";
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     z-index: -1;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 50%;
     z-index: -1;
     padding: 0.2em;
-    right: -65px;
+    right: -70px;
   }
 
   .keepbuttons {
@@ -360,9 +414,28 @@ a {
     border-radius: 50%;
     padding: 5px;
   }
+
+  .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+  }
+
+  .gallery-cell {
+    width: 100%;
+  }
+
+  .gallery:after {
+    content: "";
+  }
+
+
 }
 
-@media screen and (min-width: 768px) {
+/* Tablet Mode */
+@media screen and (width: 768px) {
   .gallery {
     display: flex;
     justify-content: center;
@@ -382,6 +455,12 @@ a {
   .mobilemenu {
     display: none;
   }
+
+
+.image{
+  display: none;
+}
+
 }
 
 
@@ -589,6 +668,8 @@ a {
     margin-top: 3em;
   }
 }
+
+
 
 /* Animations */
 @keyframes slide-right {
