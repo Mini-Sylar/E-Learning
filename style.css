@@ -28,6 +28,15 @@ a {
   width: 100%;
 }
 
+.gallery{
+  display: flex;
+  gap: 2em;
+  backdrop-filter: blur(20px);
+}
+
+
+
+
 .links {
   display: flex;
   gap: 1.5em;
@@ -618,6 +627,7 @@ width: 95%;
   }
 
   .gallery {
+    display: block;
     margin: 0 auto;
     width: 90%;
   }
