@@ -1,12 +1,12 @@
-@font-face {
+/* @font-face {
   font-family: Lufga-Black;
-  src: url("./fonts/LufgaBlack.ttf");
+  src: local("./fonts/LufgaBlack.ttf");
 }
 
 @font-face {
   font-family: Lufga-Regular;
-  src: url("./fonts/LufgaRegular.ttf");
-}
+  src: local("./fonts/LufgaRegular.ttf");
+} */
 
 body {
   background-color: #f5f7fb;
@@ -159,6 +159,9 @@ a {
 }
 .leftside > h4 {
   font-size: small;
+    animation: showTopText 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
 }
 
 .keepbuttons {
@@ -166,6 +169,9 @@ a {
   align-items: center;
   justify-content: space-between;
   width: 50%;
+    animation: showTopText 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
 }
 
 .get-started {
@@ -297,6 +303,12 @@ a {
     align-items: center;
 }
 
+
+.desktop{
+     animation: showTopText 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
 /* =========================================================== */
 @media screen and (min-width: 1024px) {
   .semicircle {
@@ -427,6 +439,10 @@ a {
     font-size: xx-small;
     text-align: center;
     margin: 0 auto;
+       animation: showTopText 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+   
   }
 
   .rightside {
@@ -509,4 +525,14 @@ a {
   to {
     transform: translateX(0);
   }
+}
+
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
 }
