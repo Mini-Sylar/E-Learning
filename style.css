@@ -30,6 +30,8 @@ a {
 
 .gallery {
     display: flex;
+    gap: 2em;
+    backdrop-filter: blur(20px);
 }
 
 .links {
