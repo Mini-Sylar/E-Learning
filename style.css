@@ -28,6 +28,10 @@ a {
   width: 100%;
 }
 
+.gallery {
+    display: flex;
+}
+
 .links {
   display: flex;
   gap: 1.5em;
@@ -276,6 +280,11 @@ a {
     display: none;
   }
 
+
+.rightside{
+  display: none;
+}
+
 @media screen and (min-width:2560px) {
   .rightside{
     position: absolute;
@@ -320,7 +329,12 @@ width: 95%;
 .desktop{
   font-size: 100px;
 }
+.rightside{
+  display: flex;
 }
+}
+
+
 /* =========================================================== */
 
 
@@ -333,7 +347,9 @@ width: 95%;
     background-color: #00c9ac;
     z-index: 1;
   }
-
+.rightside{
+  display: flex;
+}
  
   .mobilemenu {
     display: none;
