@@ -95,7 +95,6 @@ a {
 .rightside {
   display: flex;
   position: absolute;
-  background-color: #00c9ac;
   width: 100%;
 }
 
@@ -457,7 +456,7 @@ width: 95%;
   }
 
 
-.image{
+.rightside{
   display: none;
 }
 
