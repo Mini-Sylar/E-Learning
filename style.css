@@ -298,8 +298,8 @@ a {
   align-items: center;
   background-color: #f4dcb8;
   border-radius: 100%;
-  width: 300px;
-  height: 300px;
+  width: 20%;
+  height: 40%;
   top: 50px;
   right: 405px;
 }
@@ -436,7 +436,6 @@ a {
   .animated-title > div > {
     height: 50%;
     overflow: hidden;
-    background-color: #00c9ac;
     width: 100%;
   }
 
@@ -534,7 +533,7 @@ a {
     width: 100%;
   }
 
-  .gallery:after {
+  .gallery::after {
     content: "flickity";
     display: none;
   }
