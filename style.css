@@ -611,6 +611,7 @@ a {
   .links {
     justify-content: center;
     width: 100%;
+    background-color: transparent;
   }
 
   .container {

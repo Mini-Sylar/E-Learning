@@ -9,7 +9,6 @@ ham.addEventListener("click", function () {
   if ($(window).width() <= 425 && menu.classList.contains("showlinks")) {
      cards.style.display = "none";
   } else if($(window).width() <= 425 && !menu.classList.contains("showlinks")){
-     cards.style.display = "flex";
+     cards.style.display = "block";
   }
-
 });
