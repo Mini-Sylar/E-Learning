@@ -1,178 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-Learning</title>
 
-    <style>
-      @font-face {
-        font-family: Lufga-Black;
-        src: url("./fonts/LufgaBlack.ttf");
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Learning</title>
+  <link rel="preload" href="./fonts/LufgaBlack.ttf" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="./fonts/LufgaRegular.ttf" as="font" crossorigin="anonymous" />
 
-      @font-face {
-        font-family: Lufga-Regular;
-        src: url("./fonts/LufgaRegular.ttf");
-      }
-    </style>
+  <style>
+    @font-face {
+      font-family: Lufga-Black;
+      src: url("./fonts/LufgaBlack.ttf");
+    }
 
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
-  </head>
+    @font-face {
+      font-family: Lufga-Regular;
+      src: url("./fonts/LufgaRegular.ttf");
+    }
+  </style>
 
-  <body>
-    <div class="container">
-      <div class="mobilemenu">
-        <a href="#">Home</a>
-        <a href="#">Get Started</a>
-        <a href="#">About</a>
-      </div>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+</head>
 
-      <nav class="navigation">
-        <div class="logo">
-          <h1>Lagika & Queaca</h1>
-        </div>
-        <div class="links">
-          <a href="#">Contact</a>
-          <a href="#" oncontextmenu="return false;"
-            ><i class="fas fa-search"></i
-          ></a>
-          <a href="#" class="hamburger" oncontextmenu="return false;"
-            ><i class="fas fa-bars"></i
-          ></a>
-        </div>
-      </nav>
+<body>
+  <div class="container">
+    <div class="mobilemenu">
+      <a href="#">Home</a>
+      <a href="#">Get Started
 
-      <div class="outercircle"></div>
-      <div class="mainpart">
-        <div class="semicircle"></div>
-      </div>
-
-      <!-- first section -->
-      <section>
-        <div class="firstpart">
-          <div class="leftside">
-            <h1 class="desktop">
-              Take a look <br />
-              at the logic <br />
-              in a way
-            </h1>
-            <!-- <h1 class="mobile">Take a look at the logic in a way</h1> -->
-            <!-- Text Animation -->
-            <div class="animated-title">
-              <div class="text-top grow-border">
-                <div>
-                  <span>Take a</span>
-                  <span>look at the</span>
-                </div>
-              </div>
-              <div class="text-bottom">
-                <div>logic in a way</div>
-              </div>
-            </div>
-            <!-- Text Animation End -->
-          </div>
-          <h4 class="logic-sub">
-            Logic is an interdisciplinary field which studies truth
-          </h4>
-          <div class="keepbuttons">
-            <button type="button" class="get-started">Get Started</button>
-            <h2><span class="star">&star;</span></h2>
-            <div class="rating">
-              <h3>85</h3>
-              <h3 class="rate">Rating</h3>
-            </div>
-          </div>
-        </div>
-        <div class="rightside">
-          <div class="image">
-            <img src="./Images/model1.png" alt="" class="model" />
-          </div>
-        </div>
-      </section>
-
-      <section class="section2">
-        <div class="gallery js-flickity" data-flickity='{ "watchCSS": true }'>
-          <div class="card gallery-cell">
-            <div class="date august">23 Aug</div>
-            <div class="topic-points">
-              <h4>Nervous System</h4>
-              <h5>50 point - 100 point</h5>
-            </div>
-            <div class="user-details">
-              <div class="user-icon">
-                <img src="./Images/model2.jpg" alt="" class="model-icons" />
-              </div>
-              <div class="user-name">Dr. Josmihika</div>
-            </div>
-          </div>
-          <!-- Second Card -->
-          <div class="card gallery-cell">
-            <div class="date today1">Today</div>
-            <div class="topic-points">
-              <h4>General Exam</h4>
-              <h5>50 point - 100 point</h5>
-            </div>
-            <div class="user-details">
-              <div class="user-icon">
-                <img src="./Images/model3.jfif" alt="" class="model-icons" />
-              </div>
-              <div class="user-name">Dr. Lorem</div>
-            </div>
-          </div>
-          <!-- Second Card End -->
-          <!-- Third Card -->
-          <div class="card gallery-cell">
-            <div class="date today2">Today</div>
-            <div class="topic-points">
-              <h4>Back to MRI</h4>
-              <h5>50 point - 100 point</h5>
-            </div>
-            <div class="user-details">
-              <div class="user-icon">
-                <img src="./Images/model4.jfif" alt="" class="model-icons" />
-              </div>
-              <div class="user-name">Dr. Ipsum</div>
-            </div>
-          </div>
-          <!-- Third Card end -->
-        </div>
-      </section>
-
-      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-      <script src="./app.js"></script>
+      </a>
+      <a href="#">About</a>
     </div>
-    <div class="attribution">
-      <p>
-        Original Concept by
-        <a
-          href="https://dribbble.com/shots/17432129/attachments/12561834?mode=media"
-          style="color: darkorange"
-          target="_blank"
-          >Uiux Glow
-        </a>
-      </p>
-      <p>
-        Implementation by
-        <a
-          href="https://github.com/Mini-Sylar"
-          style="color: darkorange"
-          target="_blank"
-          >Terence Quashie</a
-        >
-      </p>
+
+    <nav class="navigation">
+      <div class="logo">
+        <h1>Lagika & Queaca</h1>
+      </div>
+      <div class="links">
+        <a href="#">Contact</a>
+        <a href="#" oncontextmenu="return false;"><i class="fas fa-search"></i></a>
+        <a href="#" class="hamburger" oncontextmenu="return false;"><i class="fas fa-bars"></i></a>
+      </div>
+    </nav>
+
+    <div class="outercircle"></div>
+    <div class="mainpart">
+      <div class="semicircle"></div>
     </div>
-  </body>
+
+    <!-- first section -->
+    <section>
+      <div class="firstpart">
+        <div class="leftside">
+          <h1 class="desktop">
+            Take a look <br />
+            at the logic <br />
+            in a way
+          </h1>
+          <!-- <h1 class="mobile">Take a look at the logic in a way</h1> -->
+          <!-- Text Animation -->
+          <div class="animated-title">
+            <div class="text-top grow-border">
+              <div>
+                <span>Take a</span>
+                <span>look at the</span>
+              </div>
+            </div>
+            <div class="text-bottom">
+              <div>logic in a way</div>
+            </div>
+          </div>
+          <!-- Text Animation End -->
+        </div>
+        <h4 class="logic-sub">
+          Logic is an interdisciplinary field which studies truth
+        </h4>
+        <div class="keepbuttons">
+          <button type="button" class="get-started">Get Started</button>
+          <h2><span class="star">&star;</span></h2>
+          <div class="rating">
+            <h3>85</h3>
+            <h3 class="rate">Rating</h3>
+          </div>
+        </div>
+      </div>
+      <div class="rightside">
+        <div class="image">
+          <img src="./Images/model1.png" alt="" class="model" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section2">
+      <div class="gallery js-flickity" data-flickity='{ "watchCSS": true }'>
+        <div class="card gallery-cell">
+          <div class="date august">23 Aug</div>
+          <div class="topic-points">
+            <h4>Nervous System</h4>
+            <h5>50 point - 100 point</h5>
+          </div>
+          <div class="user-details">
+            <div class="user-icon">
+              <img src="./Images/model2.jpg" alt="" class="model-icons" />
+            </div>
+            <div class="user-name">Dr. Josmihika</div>
+          </div>
+        </div>
+        <!-- Second Card -->
+        <div class="card gallery-cell">
+          <div class="date today1">Today</div>
+          <div class="topic-points">
+            <h4>General Exam</h4>
+            <h5>50 point - 100 point</h5>
+          </div>
+          <div class="user-details">
+            <div class="user-icon">
+              <img src="./Images/model3.jfif" alt="" class="model-icons" />
+            </div>
+            <div class="user-name">Dr. Lorem</div>
+          </div>
+        </div>
+        <!-- Second Card End -->
+        <!-- Third Card -->
+        <div class="card gallery-cell">
+          <div class="date today2">Today</div>
+          <div class="topic-points">
+            <h4>Back to MRI</h4>
+            <h5>50 point - 100 point</h5>
+          </div>
+          <div class="user-details">
+            <div class="user-icon">
+              <img src="./Images/model4.jfif" alt="" class="model-icons" />
+            </div>
+            <div class="user-name">Dr. Ipsum</div>
+          </div>
+        </div>
+        <!-- Third Card end -->
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./app.js"></script>
+  </div>
+  <div class="attribution">
+    <p>
+      Original Concept by
+      <a href="https://dribbble.com/shots/17432129/attachments/12561834?mode=media" style="color: darkorange"
+        target="_blank">Uiux Glow
+      </a>
+    </p>
+    <p>
+      Implementation by
+      <a href="https://github.com/Mini-Sylar" style="color: darkorange" target="_blank">Terence Quashie</a>
+    </p>
+  </div>
+</body>
+
 </html>
